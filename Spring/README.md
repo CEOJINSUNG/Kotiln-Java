@@ -17,7 +17,7 @@
          > config
          > controller
            > api : UserApiController - 여기서 @RequestMapping을 통해 API 생성
-         > ifs - 여기서 CRUDInterface를 생성하고 ApiController에 @Override하는 방식으로 운영됨
+         > ifs - 여기서 CRUDInterface를 생성하고 ApiController/ApiLogicService에 @Override하는 방식으로 운영됨
          > model
            > entity : User.java로 @Entity class 생성
            > network
@@ -25,4 +25,5 @@
              > response : UserApiResponse.java - Response 구조
              Header.java - Response 중 공통적으로 쓰이는 것들이 있기 때문에 여기서 구현 ex) api 통신시간, api 응답 코드, api 부가 설명, data가 있는데 data에 Generic Class를 써서 다양한 클래스의 데이터들이 들어올 수 있게 만들어줌
          > repository : UserRepository - 여기서 CRUD 구현
+         > service : UserApiLogicService - 
       
